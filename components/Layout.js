@@ -75,7 +75,7 @@ export default function Layout({ title, description, children }) {
   return (
     <div>
       <Head>
-        <title>{title ? `${title} - Yumitok.org` : 'Yumitok.org'}</title>
+        <title>{title ? `${title} - Yumitok` : 'Yumitok'}</title>
         {description && <meta name="description" content={description}></meta>}
       </Head>
       <ThemeProvider theme={theme}>
@@ -158,7 +158,7 @@ export default function Layout({ title, description, children }) {
         </AppBar>
         <Container className={classes.main}>{children}</Container>
         <footer className={classes.footer}>
-          <Typography>Copyright &copy; Yumitok.org</Typography>
+          <Typography>Copyright &copy; Yumitok</Typography>
         </footer>
       </ThemeProvider>
     </div>
