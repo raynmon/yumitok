@@ -134,7 +134,7 @@ export default function Layout({ title, description, children }) {
                         loginMenuCloseHandler(e, '/order-history')
                       }
                     >
-                      Order Hisotry
+                      Order history
                     </MenuItem>
                     {userInfo.isAdmin && (
                       <MenuItem
