@@ -1,7 +1,5 @@
 # Next.js Yumitok
 
-# Next Yumitok
-
 ECommerce Website using Next.js
 
 - Source Code : https://github.com/raynmon
