@@ -2,37 +2,38 @@
 
 ECommerce Website using Next.js
 
-- Source Code : https://github.com/raynmon
+- Source Code : https://github.com/raynmon/yumitok
 - Demo Website : http://yumitok.org
 
 ## What this project comprises:
 
-- NextJS basics like setting up project, navigating between pages and data fetching
-- NextJS advanced topics like dynamic routing, image optimization, SSG and SSR
-- MaterialUI framework to build responsive website using custom theme, animation and carousel
-- ReactJS including decomposing components, context API and hooks
-- Next Connect package to build backend API
-- MongoDB and Mongoose to save and retrieve data like products, orders and users
+- JavaScript incorporating:
+- NextJS for basics like setting up project, navigating between pages and data fetching
+- NextJS for advanced functions like dynamic routing, image optimization, SSG and SSR
+- MaterialUI framework for responsive website using custom themes and animation
+- ReactJS for decomposing components, context API and hooks
+- Next Connect to build backend API
+- MongoDB and Mongoose cloud database to save and retrieve data: products, orders and users
 - PayPal developer api to make online payment
-- Deploy web applications on servers like Vercel and Netlify
+- Application deployed on Vercel https://vercel.com/raynmon/yumitok/
 
 Run it live at http://yumitok.org
 Admin login: admin@example.com
 Admin Pass: 123456
 
 1. Sequence of project tasks
-2. Install Tools
+2. Installed Tools
    1. VS Code
    2. Chrome
    3. Node.js
    4. MongoDB
-3. Create Next App
+3. Create Layout by installing next-js
    1. npx create-next-app
    2. add layout component
    3. add header, main and footer
 4. Add Styles
    1. add css to header, main and footer
-5. Fix SSR Issue on MaterialUI
+5. Install MaterialUI
    1. add \_documents.js
    2. add code to fix styling issue
 6. List Products
