@@ -4,7 +4,7 @@ ECommerce Website using Next.js
 
 - Source Code : https://github.com/raynmon/yumitok
 - Demo Website : http://yumitok.org
-- Video Demo:  
+- Video Demo: https://www.youtube.com/watch?v=xZrS8APuERY
 
 ## What this project comprises:
 
