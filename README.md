@@ -1,4 +1,4 @@
-# Next.js Yumitok
+# Yumitok with next-js and Javascript
 
 ECommerce Website using Next.js
 
