@@ -12,7 +12,7 @@ import { Store } from '../utils/Store';
 import useStyles from '../utils/styles';
 import Cookies from 'js-cookie';
 import { Controller, useForm } from 'react-hook-form';
-import CheckoutWizard from '../components/checkoutWizard';
+import CheckoutWizard from '../components/CheckoutWizard';
 
 export default function Shipping() {
   const {
@@ -27,7 +27,6 @@ export default function Shipping() {
     userInfo,
     cart: { shippingAddress },
   } = state;
-
   useEffect(() => {
     if (!userInfo) {
       router.push('/login?redirect=/shipping');

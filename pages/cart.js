@@ -33,7 +33,7 @@ function CartScreen() {
   const updateCartHandler = async (item, quantity) => {
     const { data } = await axios.get(`/api/products/${item._id}`);
     if (data.countInStock < quantity) {
-      window.alert('Product is now out of stock, please contact for pre-order');
+      window.alert('Sorry. Product is out of stock');
       return;
     }
     dispatch({ type: 'CART_ADD_ITEM', payload: { ...item, quantity } });
@@ -45,15 +45,15 @@ function CartScreen() {
     router.push('/shipping');
   };
   return (
-    <Layout title="Cart">
+    <Layout title="Shopping Cart">
       <Typography component="h1" variant="h1">
-        Cart
+        Shopping Cart
       </Typography>
       {cartItems.length === 0 ? (
         <div>
           Cart is empty.{' '}
           <NextLink href="/" passHref>
-            <Link>Go to Home page</Link>
+            <Link>Go shopping</Link>
           </NextLink>
         </div>
       ) : (
@@ -85,6 +85,7 @@ function CartScreen() {
                           </Link>
                         </NextLink>
                       </TableCell>
+
                       <TableCell>
                         <NextLink href={`/product/${item.slug}`} passHref>
                           <Link>
@@ -150,4 +151,5 @@ function CartScreen() {
     </Layout>
   );
 }
+
 export default dynamic(() => Promise.resolve(CartScreen), { ssr: false });

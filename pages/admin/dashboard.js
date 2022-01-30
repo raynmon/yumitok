@@ -26,6 +26,7 @@ import {
   LinearScale,
   BarElement,
 } from 'chart.js';
+
 ChartJS.register(CategoryScale, LinearScale, BarElement);
 
 function reducer(state, action) {
@@ -71,7 +72,6 @@ function AdminDashboard() {
     fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   return (
     <Layout title="Admin Dashboard">
       <Grid container spacing={1}>
@@ -88,14 +88,14 @@ function AdminDashboard() {
                   <ListItemText primary="Orders"></ListItemText>
                 </ListItem>
               </NextLink>
-              <NextLink href="/admin/users" passHref>
-                <ListItem button component="a">
-                  <ListItemText primary="Users"></ListItemText>
-                </ListItem>
-              </NextLink>
               <NextLink href="/admin/products" passHref>
                 <ListItem button component="a">
                   <ListItemText primary="Products"></ListItemText>
+                </ListItem>
+              </NextLink>
+              <NextLink href="/admin/users" passHref>
+                <ListItem button component="a">
+                  <ListItemText primary="Users"></ListItemText>
                 </ListItem>
               </NextLink>
             </List>

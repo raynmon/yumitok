@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <SnackbarProvider anchorOrigin={{ vertical: 'top', horizontal: 'center' }}>
       <StoreProvider>
-        <Component {...pageProps} />
         <PayPalScriptProvider deferLoading={true}>
           <Component {...pageProps} />
         </PayPalScriptProvider>

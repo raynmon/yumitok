@@ -23,7 +23,7 @@ import {
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import useStyles from '../utils/styles';
-import CheckoutWizard from '../components/checkoutWizard';
+import CheckoutWizard from '../components/CheckoutWizard';
 import { useSnackbar } from 'notistack';
 import { getError } from '../utils/error';
 import Cookies from 'js-cookie';
@@ -41,7 +41,7 @@ function PlaceOrder() {
     cartItems.reduce((a, c) => a + c.price * c.quantity, 0)
   );
   const shippingPrice = itemsPrice > 200 ? 0 : 15;
-  const taxPrice = round2(itemsPrice * 0.1);
+  const taxPrice = round2(itemsPrice * 0.15);
   const totalPrice = round2(itemsPrice + shippingPrice + taxPrice);
 
   useEffect(() => {

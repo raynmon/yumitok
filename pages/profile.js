@@ -42,7 +42,6 @@ function Profile() {
     setValue('email', userInfo.email);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   const submitHandler = async ({ name, email, password, confirmPassword }) => {
     closeSnackbar();
     if (password !== confirmPassword) {
@@ -60,8 +59,7 @@ function Profile() {
         { headers: { authorization: `Bearer ${userInfo.token}` } }
       );
       dispatch({ type: 'USER_LOGIN', payload: data });
-      Cookies.set('userInfo', data);
-
+      Cookies.set('userInfo', JSON.stringify(data));
       enqueueSnackbar('Profile updated successfully', { variant: 'success' });
     } catch (err) {
       enqueueSnackbar(getError(err), { variant: 'error' });
